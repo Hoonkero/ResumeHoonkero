@@ -1,0 +1,57 @@
+{
+  "name": "Иван Архипов",
+  "fullName": "Иван Алексеевич Архипов",
+  "intro": "Проектирую интерфейсы, пишу код и объясняю сложное простыми словами.",
+  "portrait": "assets/portrait.webp",
+  "roles": [
+    { "name": "веб-дизайнер", "color": "violet" },
+    { "name": "инженер", "color": "lime" },
+    { "name": "программист", "color": "blue" },
+    { "name": "учитель", "color": "peach" }
+  ],
+  "skills": [
+    {
+      "title": "Инструменты",
+      "items": ["Веб-дизайн", "HTML и CSS", "JavaScript", "Python", "Node.js", "Flask", "SQLite", "Интеграции"]
+    },
+    {
+      "title": "Как я работаю",
+      "items": ["Прототипирование", "Системное мышление", "Объясняю сложное", "Преподавание"]
+    },
+    {
+      "title": "Языки",
+      "items": ["Русский"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Timetable Kiosk",
+      "category": "Веб-интерфейс",
+      "description": "Школьное расписание с выбором классов, преподавателей и корпусов. Показывает замены, учитывает чётность недели и сохраняет последние загруженные данные.",
+      "stack": ["JavaScript", "HTML", "CSS", "IndexedDB"],
+      "repository": "https://github.com/Hoonkero/timetable-kiosk",
+      "demo": "https://hoonkero.github.io/timetable-kiosk/"
+    },
+    {
+      "name": "Helpdesk Dispatcher",
+      "category": "Автоматизация",
+      "description": "Демонстрационный диспетчер обращений. Классифицирует заявки, сохраняет контекст диалога и формирует очередь действий для оператора.",
+      "stack": ["Python", "Flask", "SQLite"],
+      "repository": "https://github.com/Hoonkero/helpdesk-dispatcher"
+    },
+    {
+      "name": "obs-ws-mini",
+      "category": "Инструмент",
+      "description": "Клиент OBS WebSocket v5 для Node.js без зависимостей. Содержит примеры автоматизации эфира и управления источниками.",
+      "stack": ["Node.js", "WebSocket"],
+      "repository": "https://github.com/Hoonkero/obs-ws-mini"
+    }
+  ],
+  "contacts": [
+    {
+      "label": "GitHub",
+      "value": "@Hoonkero",
+      "url": "https://github.com/Hoonkero"
+    }
+  ]
+}

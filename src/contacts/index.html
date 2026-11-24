@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0912">
+  <meta name="description" content="{{NAME}}. Контакты и быстрые ссылки на разделы резюме.">
+  <title>Контакты — {{NAME}}</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
+  <script type="module" src="../main.js"></script>
+</head>
+<body data-page="contacts">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <!-- SITE_HEADER -->
+  <main class="subpage contact-page shell" id="main">
+    <a class="back-link" href="../"><span aria-hidden="true">←</span> К резюме</a>
+    <div class="contact-layout">
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <p class="eyebrow">Контакты</p>
+        <h1 class="page-title" id="contact-title">Будем<br> на связи.</h1>
+        <div class="contact-methods" data-contacts></div>
+      </section>
+      <nav class="quick-links" aria-label="Быстрый переход">
+        <h2>Быстрый переход</h2>
+        <a href="../">Главная <span aria-hidden="true">↗</span></a>
+        <a href="../documents/">Все документы <span aria-hidden="true">↗</span></a>
+        <a href="../#skills">Навыки <span aria-hidden="true">↗</span></a>
+        <a href="../#projects">Проекты <span aria-hidden="true">↗</span></a>
+        <a href="../#experience">Опыт работы <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </main>
+  <!-- SITE_FOOTER -->
+</body>
+</html>

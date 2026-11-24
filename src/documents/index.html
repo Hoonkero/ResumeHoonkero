@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0912">
+  <meta name="description" content="{{NAME}}. Дипломы, курсы повышения квалификации и сертификаты.">
+  <title>Документы — {{NAME}}</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
+  <script type="module" src="../main.js"></script>
+</head>
+<body data-page="documents">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <!-- SITE_HEADER -->
+  <main class="subpage archive shell" id="main">
+    <a class="back-link" href="../#documents"><span aria-hidden="true">←</span> К резюме</a>
+    <h1 class="page-title">Документы.</h1>
+    <div class="document-viewer" data-document-viewer hidden>
+      <div class="viewer-workspace">
+        <div class="viewer-stage" data-document-stage>
+          <div class="viewer-floor" aria-hidden="true"></div>
+          <div class="viewer-sheet" data-document-sheet>
+            <div class="sheet-face sheet-front"><img data-document-front alt="" draggable="false"></div>
+            <div class="sheet-face sheet-back"><img data-document-back alt="" aria-hidden="true" draggable="false"></div>
+          </div>
+          <p class="viewer-hint">Потяни, чтобы повернуть</p>
+          <button class="icon-button viewer-enlarge" type="button" data-document-enlarge aria-label="Увеличить страницу" title="Увеличить страницу"><span class="expand-symbol" aria-hidden="true"></span></button>
+        </div>
+        <div class="viewer-controls">
+          <div class="button-group" role="group" aria-label="Поворот документа">
+            <button class="icon-button" type="button" data-rotate-left aria-label="Повернуть влево" title="Повернуть влево">↶</button>
+            <button class="icon-button" type="button" data-rotate-right aria-label="Повернуть вправо" title="Повернуть вправо">↷</button>
+            <button class="icon-button" type="button" data-rotate-reset aria-label="Вернуть исходное положение" title="Вернуть исходное положение"><span class="target-symbol" aria-hidden="true"></span></button>
+          </div>
+          <div class="button-group" data-page-controls role="group" aria-label="Страницы документа" hidden>
+            <button class="icon-button" type="button" data-page-prev aria-label="Предыдущая страница"><span class="chevron previous" aria-hidden="true"></span></button>
+            <span class="slide-count" data-page-count role="status"></span>
+            <button class="icon-button" type="button" data-page-next aria-label="Следующая страница"><span class="chevron" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="viewer-description">
+        <p class="eyebrow" data-document-type></p>
+        <h2 data-document-name></h2>
+        <dl class="document-meta" data-document-meta></dl>
+        <p class="document-copy" data-document-description></p>
+        <a class="button button-outline" data-document-original target="_blank" rel="noopener">Открыть изображение <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <p class="empty-state" data-documents-empty hidden>Документы появятся здесь после добавления.</p>
+    <section class="archive-list" aria-labelledby="archive-list-title" data-archive-list hidden>
+      <h2 id="archive-list-title">Все документы</h2>
+      <div class="archive-items" data-document-list></div>
+    </section>
+    <dialog class="full-image-dialog" data-image-dialog aria-labelledby="full-image-title">
+      <div class="dialog-bar">
+        <h2 id="full-image-title" data-full-image-title></h2>
+        <form method="dialog"><button class="icon-button" type="submit" aria-label="Закрыть изображение">×</button></form>
+      </div>
+      <div class="dialog-image"><img data-full-image alt=""></div>
+    </dialog>
+  </main>
+  <!-- SITE_FOOTER -->
+</body>
+</html>

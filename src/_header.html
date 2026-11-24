@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="shell header-layout">
+    <a class="identity" href="{{ROOT}}" aria-label="{{NAME}} — главная">
+      <span class="brand-mark" aria-hidden="true"></span><span>{{NAME}}</span>
+    </a>
+    <button class="menu-toggle icon-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle hidden><span class="menu-symbol" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <a href="{{ROOT}}#documents" data-home-section="documents">Документы</a>
+      <a href="{{ROOT}}#skills" data-home-section="skills">Навыки</a>
+      <a href="{{ROOT}}#projects" data-home-section="projects">Проекты</a>
+      <a href="{{ROOT}}#experience" data-home-section="experience">Опыт</a>
+    </nav>
+    <a class="header-contact" href="{{ROOT}}contacts/" {{CONTACT_CURRENT}}>Контакты <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
